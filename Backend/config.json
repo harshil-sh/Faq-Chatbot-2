@@ -1,0 +1,3 @@
+{
+    "connectionstring":"DRIVER={{ODBC Driver 17 for SQL Server}};Server=localhost;Database=Test;Integrated Security=true;TrustServerCertificate=True"
+}
