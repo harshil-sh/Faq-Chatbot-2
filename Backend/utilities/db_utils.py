@@ -60,6 +60,11 @@ class DatabaseUtility:
             else:
                 cursor.execute(f"{{CALL {procedure_name}}}")
             rows = cursor.fetchall()
+            resultset=[];
+            if cursor.nextset():
+                resultset.append(rows)
+                resultset.append(cursor.fetchall())
+            
         except Exception as error:
             print("Exception: ",error)
         finally:
